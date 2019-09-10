@@ -1,0 +1,49 @@
+package: github.com/DCNT-developer/dcnt
+homepage: https://github.com/DCNT-developer/dcnt
+license: MIT
+import:
+- package: github.com/DCNT-developer/bolt
+- package: github.com/DCNT-developer/btcutil
+  subpackages:
+  - base58
+  - certs
+- package: github.com/DCNT-developer/ed25519
+- package: github.com/DCNT-developer/factom
+  version: develop
+- package: github.com/DCNT-developer/go-bip32
+- package: github.com/DCNT-developer/go-bip39
+- package: github.com/DCNT-developer/goleveldb
+  subpackages:
+  - leveldb
+  - leveldb/errors
+  - leveldb/opt
+  - leveldb/util
+- package: github.com/DCNT-developer/logrustash
+- package: github.com/DCNT-developer/serveridentity
+  subpackages:
+  - identity
+- package: github.com/DCNT-developer/web
+- package: github.com/btcsuitereleases/btcutil
+  subpackages:
+  - base58
+- package: github.com/dustin/go-humanize
+- package: github.com/hashicorp/go-plugin
+- package: github.com/prometheus/client_golang
+  subpackages:
+  - prometheus
+- package: github.com/sirupsen/logrus
+- package: github.com/spf13/cobra
+- package: golang.org/x/crypto
+  subpackages:
+  - scrypt
+- package: gopkg.in/AlecAivazis/survey.v1
+- package: gopkg.in/gcfg.v1
+- package: gopkg.in/yaml.v2
+- package: github.com/stretchr/testify
+  version: ^1.2.2
+  subpackages:
+  - assert
+testImport:
+- package: github.com/DCNT-developer/go-spew
+  subpackages:
+  - spew

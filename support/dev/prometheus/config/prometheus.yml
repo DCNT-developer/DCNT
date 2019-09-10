@@ -1,0 +1,17 @@
+global:
+    scrape_interval:     60s # By default, scrape targets every 15 seconds.
+    evaluation_interval: 60s # By default, scrape targets every 15 seconds.
+    # scrape_timeout is set to the global default (10s).
+
+    # Attach these labels to any time series or alerts when communicating with
+    # external systems (federation, remote storage, Alertmanager).
+    external_labels:
+        monitor: 'dcnt'
+
+scrape_configs:
+    - job_name: dcnt
+      static_configs:
+          - targets:
+              - 'dcnt_1:9876'
+              - 'dcnt_2:9876'
+              - 'dcnt_3:9876'
